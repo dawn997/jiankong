@@ -10,7 +10,7 @@ from alibabacloud_facebody20191230.client import Client
 from alibabacloud_facebody20191230.models import DetectPedestrianAdvanceRequest
 from alibabacloud_tea_openapi.models import Config
 from alibabacloud_tea_util.models import RuntimeOptions
-from mail import send_mail
+# from mail import send_mail
 from upload_img import ssh_scpHtmlfile
 from post_url import post_wechat
 
@@ -168,19 +168,19 @@ class HKCam(object):
 if __name__=="__main__":
     config = Config(
         # 您的 AccessKey ID
-        access_key_id='',
+        access_key_id=os.environ.get("ALI_ACCESS_KEY_ID"),
         # 您的 AccessKey Secret
-        access_key_secret='gbFw9GHG9pov7NOUtJRrZXwvLfUHoA',
+        access_key_secret=os.environ.get("ALI_ACCESS_KEY_SECRET"),
         # 访问的域名
         endpoint='facebody.cn-shanghai.aliyuncs.com',
         # 访问的域名对应的region
         region_id='cn-shanghai'
     )
-    camIP ='192.168.1.104'
+    camIP =os.environ.get("CAM_IP")
     #camIP ='192.168.3.157'
     DEV_PORT = 8000
     username ='admin'
-    password = 'wx199712'
+    password = os.environ.get("CAM_PASSWORD")
     hkclass = HKCam(camIP,username,password)
     last_stamp = 0
     while True:
