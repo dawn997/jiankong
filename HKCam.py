@@ -168,7 +168,7 @@ class HKCam(object):
 if __name__=="__main__":
     config = Config(
         # 您的 AccessKey ID
-        access_key_id='LTAI5tLHrEnaYZUsEYXrswfE',
+        access_key_id='',
         # 您的 AccessKey Secret
         access_key_secret='gbFw9GHG9pov7NOUtJRrZXwvLfUHoA',
         # 访问的域名
