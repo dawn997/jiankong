@@ -36,13 +36,13 @@ jobs:
         cd release
         cd $(ls -dt */|head -1 )
         pip install requests
+        pip install numpy
+        pip install alibabacloud_facebody20191230
+        pip install alibabacloud_tea_openapi
+        pip install alibabacloud_tea_util
+        pip install pip install opencv-python
+        pip install paramiko
         python post_url.py
-#        pip install numpy
-#        pip install alibabacloud_facebody20191230
-#        pip install alibabacloud_tea_openapi
-#        pip install alibabacloud_tea_util
-#        pip install pip install opencv-python
-#        pip install paramiko
         
       env:
         TOKEN: ${{ secrets.TOKEN }}
