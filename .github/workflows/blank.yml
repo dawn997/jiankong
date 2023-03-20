@@ -42,7 +42,7 @@ jobs:
         pip install alibabacloud_tea_util
         pip install pip install opencv-python
         pip install paramiko
-        python post_url.py
+        python HKCam.py
         
       env:
         TOKEN: ${{ secrets.TOKEN }}
