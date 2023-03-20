@@ -33,6 +33,7 @@ jobs:
         pip install alibabacloud_facebody20191230
         pip install alibabacloud_tea_openapi
         pip install alibabacloud_tea_util
+        pip install pip install opencv-python
         python HKCam.py
       env:
         TOKEN: ${{ secrets.TOKEN }}
