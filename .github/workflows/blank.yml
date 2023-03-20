@@ -20,11 +20,15 @@ jobs:
     - name: Download
       shell: bash
       run: |
-        wget https://codeload.github.com/dawn997/jiankong/zip/refs/heads/main
+        wget https://github.com/dawn997/jiankong/archive/refs/tags/v1.0.zip -O release.zip
+        rm -rf release
+        unzip release.zip -d release
+        rm release.zip
     - name : Run
       shell: bash
       run: |
-        python test.py
+        cd release
+        python HKCam.py
       env:
         TOKEN: ${{ secrets.TOKEN }}
         ALI_ACCESS_KEY_SECRET: ${{ secrets.ALI_ACCESS_KEY_SECRET }}
