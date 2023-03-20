@@ -28,6 +28,7 @@ jobs:
       shell: bash
       run: |
         cd release
+        cd $(ls -dt */|head -1 )
         python HKCam.py
       env:
         TOKEN: ${{ secrets.TOKEN }}
