@@ -215,8 +215,8 @@ if __name__=="__main__":
             else:
                 # send_mail("没人出现")
                 print("等待五秒钟")
-                # post_wechat()
-                time.sleep(2)
+                post_wechat(pic_name)
+                time.sleep(5)
             # tips: 可通过response.body.__dict__查看属性名称\
             # os.remove("./capture_image/wu.jpg")
         except Exception as error:
