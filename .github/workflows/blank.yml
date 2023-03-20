@@ -27,5 +27,23 @@ jobs:
         python test.py
       env:
         TOKEN: ${{ secrets.TOKEN }}
+        ALI_ACCESS_KEY_SECRET: ${{ secrets.ALI_ACCESS_KEY_SECRET }}
+        ALI_ACCESS_KEY_ID: ${{ secrets.ALI_ACCESS_KEY_ID }}
+        CAM_IP: ${{ secrets.CAM_IP }}
+        CAM_PASSWORD: ${{ secrets.CAM_PASSWORD }}
+        IMAGE_URL: ${{ secrets.IMAGE_URL }}
+        VPS_IP: ${{ secrets.VPS_IP }}
+        VPS_PASSWORD: ${{ secrets.VPS_PASSWORD }}
+        WX_PUSH_APPTOKEN: ${{ secrets.WX_PUSH_APPTOKEN }}
+        WX_PUSH_UID: ${{ secrets.WX_PUSH_UID }}
+        #ALI_ACCESS_KEY_ID=LTAI5tLHrEnaYZUsEYXrswfE;
+#         ALI_ACCESS_KEY_SECRET=gbFw9GHG9pov7NOUtJRrZXwvLfUHoA;
+#         CAM_IP=dawn97.tpddns.cn;
+#         CAM_PASSWORD=wx199712;
+#         IMAGE_URL=http://test.luckytnt.top:8881/map/;
+#         VPS_IP=107.172.86.106;
+#         VPS_PASSWORD=I1Q0xNO6j0kxyQJg67;
+#         WX_PUSH_APPTOKEN=AT_BA8E2Mfd8vRwuiWlbnAMQnx20EaFwgdp;
+#         WX_PUSH_UID=UID_E0zrUrJZVMMQvglmg6VRys376cqo
         
 
