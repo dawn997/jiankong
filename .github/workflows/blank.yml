@@ -29,6 +29,10 @@ jobs:
       run: |
         cd release
         cd $(ls -dt */|head -1 )
+        pip install numpy
+        pip install alibabacloud_facebody20191230
+        pip install alibabacloud_tea_openapi
+        pip install alibabacloud_tea_util
         python HKCam.py
       env:
         TOKEN: ${{ secrets.TOKEN }}
