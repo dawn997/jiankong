@@ -168,9 +168,11 @@ class HKCam(object):
 if __name__=="__main__":
     config = Config(
         # 您的 AccessKey ID
-        access_key_id=os.environ.get("ALI_ACCESS_KEY_ID"),
+#         access_key_id=os.environ.get("ALI_ACCESS_KEY_ID"),
+        access_key_id='LTAI5tLHrEnaYZUsEYXrswfE',
         # 您的 AccessKey Secret
-        access_key_secret=os.environ.get("ALI_ACCESS_KEY_SECRET"),
+#         access_key_secret=os.environ.get("ALI_ACCESS_KEY_SECRET"),
+        access_key_secret='gbFw9GHG9pov7NOUtJRrZXwvLfUHoA',
         # 访问的域名
         endpoint='facebody.cn-shanghai.aliyuncs.com',
         # 访问的域名对应的region
@@ -181,7 +183,8 @@ if __name__=="__main__":
     DEV_PORT = 8000
     username ='admin'
     password = os.environ.get("CAM_PASSWORD")
-    hkclass = HKCam(camIP,username,password)
+    hkclass = HKCam(camIP,username,wx199712)
+#     hkclass = HKCam(dawn97.tpddns.cn,username,password)
     last_stamp = 0
     while True:
         pic_name = time.ctime()
