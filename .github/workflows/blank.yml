@@ -2,11 +2,6 @@
 
 name: FishPond Monitor
 
-inputs:
-  Access_Key:
-    description: 'Aliyun access key'
-    required: true
-
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
@@ -39,3 +34,12 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+      
+      - name: Download
+        shell: bash
+        run: |
+          #https://github.com/dawn997/jiankong.git
+          wget https://codeload.github.com/dawn997/jiankong/zip/refs/heads/main -O release.zip
+          rm -rf release
+          unzip release.zip -d release
+          rm release.zip
