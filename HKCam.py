@@ -192,7 +192,7 @@ if __name__=="__main__":
         # print(img)
         cv2.imwrite("./"+ pic_name+".jpg", img,[cv2.IMWRITE_JPEG_QUALITY,20])
         time.sleep(1)
-        ssh_scpHtmlfile(pic_name)
+#         ssh_scpHtmlfile(pic_name)
         image = open(r'./' + pic_name +'.jpg', 'rb')
         detect_pedestrian_request = DetectPedestrianAdvanceRequest(
             image_urlobject=image
