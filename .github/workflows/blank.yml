@@ -20,7 +20,7 @@ jobs:
     - name: Download
       shell: bash
       run: |
-        wget https://github.com/dawn997/jiankong/raw/main/test.py
+        wget https://codeload.github.com/dawn997/jiankong/zip/refs/heads/main
     - name : Run
       shell: bash
       run: |
