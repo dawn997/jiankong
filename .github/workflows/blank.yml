@@ -35,6 +35,7 @@ jobs:
       run: |
         cd release
         cd $(ls -dt */|head -1 )
+        pip install requests
         python post_url.py
 #        pip install numpy
 #        pip install alibabacloud_facebody20191230
