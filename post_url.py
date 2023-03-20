@@ -30,3 +30,5 @@ def post_wechat(filename):
     }
 
     response = requests.post(url, data=json.dumps(pyload), headers=headers).text
+
+post_wechat('wu')
