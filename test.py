@@ -1,3 +1,3 @@
 from os import environ
-token = environ['TOKEN']
+token = environ.get("TOKEN")
 printf('token')
