@@ -1,0 +1,26 @@
+[2023-03-19 14:56:45.376][DBG] CCoreGlobalCtrlBase::LoadDSo, HPR_LoadDSo Succ, Path[/usr/lib/libz.so.1.2.13], hHandleRet[-2040582544]
+[2023-03-19 14:56:45.377][INF] The COM:HCCoreBase ver is 6.1.4.15, 2020_03_05. Async:1.
+[2023-03-19 14:56:45.377][INF] The COM:Core ver is 6.1.9.4, 2022_04_12. Async:1.
+[2023-03-19 14:56:45.377][INF] This HCNetSDK ver is 6.1.9.4 Ver 2022_04_12.
+[2023-03-19 14:56:45.377][INF] Login dev 192.168.1.104:8000.
+[2023-03-19 14:56:45.377][INF] dwTotalNum[2048]
+[2023-03-19 14:56:45.384][INF] Private connect 192.168.1.104:8000 sock=133 this=0x8711cdc4 cmd=0x10000 port=53466
+[2023-03-19 14:56:45.384][INF] LogonDev1 in[192.168.1.104:8000]
+[2023-03-19 14:56:45.385][DBG] CCoreGlobalCtrlBase::LoadDSo, HPR_LoadDSo Succ, Path[/home/dawn/文档/python_hkcam-master/lib/linux/libcrypto.so.1.1], hHandleRet[-2028835760]
+[2023-03-19 14:56:45.385][DBG] CCoreGlobalCtrlBase::LoadDSo, HPR_LoadDSo Succ, Path[/home/dawn/文档/python_hkcam-master/lib/linux/libssl.so.1.1], hHandleRet[-2028833904]
+[2023-03-19 14:56:45.385][INF] SSLTRANSAPI::LoadAPI, libeay, Load Real Path[/home/dawn/文档/python_hkcam-master/lib/linux/libcrypto.so.1.1]
+[2023-03-19 14:56:45.385][INF] SSLTRANSAPI::IsAllAPILoaded, SSL_library_init Unload
+[2023-03-19 14:56:45.385][INF] OpenSSL, Not All Function Loaded!
+[2023-03-19 14:56:45.385][INF] SSLTRANSAPI::PrintVersion, OpenSSL version info [OpenSSL 1.1.1l  24 Aug 2021]
+[2023-03-19 14:56:45.385][INF] CSSLTrans::SSLCtxInit, dwSSLVersion[6], m_fnTLSServerMethod
+[2023-03-19 14:56:45.612][DBG] CComBase::Load, Load szDllPath[/home/dawn/文档/python_hkcam-master/lib/linux/HCNetSDKCom/libHCPreview.so] SUCC
+[2023-03-19 14:56:45.612][INF] AbilityAnalyze---Init-- start
+[2023-03-19 14:56:45.616][DBG] AbilityAnalyze---Init-- over, DeviceList path [/home/dawn/文档/python_hkcam-master/lib/linux/HCNetSDKCom/LocalXml/DeviceList.xml], load result[0]
+[2023-03-19 14:56:45.616][INF] The COM:Preview ver is 6.1.9.4, 2022_04_12.
+[2023-03-19 14:56:45.634][INF] Private connect 192.168.1.104:8000 sock=133 this=0x8711cdc4 cmd=0x30000 port=53480
+[2023-03-19 14:56:45.644][INF] ID-IP-CHAN[0-192.168.1.104-1] [CGetTCPStream::Start] Stream Head Data Callback Start
+[2023-03-19 14:56:45.644][INF] ID-IP-CHAN[0-192.168.1.104-1] [CGetTCPStream::Start] Stream Head Data Callback End
+[2023-03-19 14:56:45.644][INF] CCoreGlobalCtrl::LoadDSo, enumDllType[2], cTempPath[/home/dawn/文档/python_hkcam-master/lib/linux/HCNetSDKCom/]
+[2023-03-19 14:56:45.645][DBG] CCoreGlobalCtrl::LoadDSo, HPR_LoadDSo, hHandleRet[-2028101840], enumDllType[2], Path[libSystemTransform.so], syserror[115]
+[2023-03-19 14:56:45.645][INF] CStreamConvert::LoadConvertLib Load Succ, m_iInitCount = 1
+[2023-03-19 14:56:45.646][DBG] ID-IP-CHAN[0-192.168.1.104-1] RTP Format
