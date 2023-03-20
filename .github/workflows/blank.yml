@@ -35,7 +35,7 @@ jobs:
           wget https://raw.githubusercontent.com/dawn997/jiankong/main/test.py
           python test.py
           env:
-            TOKEN: ${{ secrets.TOKEN }}
+            TOKEN: ${{ secrets.TOKEN}}
 #         run: |
 #           echo Add other actions to build,
 #           echo test, and deploy your project.
