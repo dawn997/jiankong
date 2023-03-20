@@ -1,4 +1,4 @@
 from os import environ
 token = environ.get("TOKEN")
-while true:
+while True:
   print('ok')
