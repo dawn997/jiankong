@@ -1,4 +1,4 @@
 from os import environ
 token = environ.get("TOKEN")
-while True:
+if token == '1543121128':
   print('ok')
